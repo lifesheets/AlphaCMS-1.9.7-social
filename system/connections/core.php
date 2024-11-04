@@ -17,7 +17,7 @@ require ($_SERVER['DOCUMENT_ROOT'].'/system/connections/global/users.php');
 ------------------------------------------
 */
 
-function acms_header($title = null, $access = null, $description = null, $keywords = null, $logo = null) {
+function livecms_header($title = null, $access = null, $description = null, $keywords = null, $logo = null) {
   
   //$title - заголовок текущей страницы
   //$access - кому доступна страница

@@ -1,5 +1,5 @@
 <?php
-acms_header('Сообщества'); 
+livecms_header('Сообщества');
 is_active_module('PRIVATE_COMMUNITIES');
 
 $get = tabs(get('get'));

@@ -1,7 +1,7 @@
 <?php
 $comm = db::get_string("SELECT `ID`,`PRIVATE`,`URL`,`NAME` FROM `COMMUNITIES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 $par = db::get_string("SELECT `ADMINISTRATION` FROM `COMMUNITIES_PAR` WHERE `COMMUNITY_ID` = ? AND `USER_ID` = ? AND `ACT` = ? LIMIT 1", [$comm['ID'], user('ID'), 1]);
-acms_header(lg('Приглашения в сообщество %s', communities::name($comm['ID'])), 'users');
+livecms_header(lg('Приглашения в сообщество %s', communities::name($comm['ID'])), 'users');
 communities::blocked($comm['ID']);
 is_active_module('PRIVATE_COMMUNITIES');
 

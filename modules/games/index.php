@@ -1,5 +1,5 @@
 <?php
-acms_header('Онлайн игры'); 
+livecms_header('Онлайн игры');
 is_active_module('PRIVATE_GAMES');
 
 $root = (get('get') == 'new' ? 'new' : (get('get') == 'rating' ? 'rating' : 'all'));

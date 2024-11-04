@@ -1,6 +1,6 @@
 <?php
 $account_id = abs(intval(db::get_column("SELECT `ID` FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))])));
-acms_header(lg('Онлайн игры %s', user::login_mini($account_id)));
+livecms_header(lg('Онлайн игры %s', user::login_mini($account_id)));
 is_active_module('PRIVATE_GAMES');
 
 if ($account_id == 0) {

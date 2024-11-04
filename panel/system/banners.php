@@ -1,5 +1,5 @@
 <?php
-acms_header('Баннеры', 'management');
+livecms_header('Баннеры', 'management');
   
 ?>
 <div class='navigation'>

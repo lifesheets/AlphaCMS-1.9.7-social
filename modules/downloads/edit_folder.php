@@ -1,7 +1,7 @@
 <?php 
 $dir = db::get_string("SELECT * FROM `DOWNLOADS_DIR` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 html::title(lg('Редактировать категорию %s', tabs($dir['NAME'])));
-acms_header(); 
+livecms_header();
 get_check_valid();
 access('users');
 

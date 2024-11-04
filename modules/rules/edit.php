@@ -1,7 +1,7 @@
 <?php
 $rules = db::get_string("SELECT * FROM `RULES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 html::title('Редактировать раздел правил');
-acms_header();
+livecms_header();
 access('rules');
 
 if (!isset($rules['ID'])) {

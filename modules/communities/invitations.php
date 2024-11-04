@@ -1,6 +1,6 @@
 <?php
 html::title('Приглашения в сообщества');
-acms_header();
+livecms_header();
 access('users');
 
 if (config('PRIVATE_COMMUNITIES') == 0){

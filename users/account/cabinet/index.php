@@ -1,5 +1,5 @@
 <?php  
-acms_header('Кабинет', 'users');
+livecms_header('Кабинет', 'users');
 
 if (direct::e_file('style/version/'.version('DIR').'/includes/cabinet.php') == true) {
   

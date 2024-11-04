@@ -1,6 +1,6 @@
 <?php
 $video = db::get_string("SELECT * FROM `VIDEOS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
-acms_header(lg('Видео %s', tabs($video['NAME']))); 
+livecms_header(lg('Видео %s', tabs($video['NAME'])));
 is_active_module('PRIVATE_VIDEOS');
 
 if (!isset($video['ID'])){

@@ -1,5 +1,5 @@
 <?php  
-acms_header('Смена пароля', 'users');
+livecms_header('Смена пароля', 'users');
 
 if (post('ok_pass')){
   

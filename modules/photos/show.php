@@ -1,6 +1,6 @@
 <?php
 $photo = db::get_string("SELECT * FROM `PHOTOS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
-acms_header(lg('Фото %s', tabs($photo['NAME']))); 
+livecms_header(lg('Фото %s', tabs($photo['NAME'])));
 is_active_module('PRIVATE_PHOTOS');
 
 if (!isset($photo['ID'])){

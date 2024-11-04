@@ -1,6 +1,6 @@
 <?php
 $file = db::get_string("SELECT * FROM `PHOTOS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);    
-acms_header('Жалоба на фото', 'users');
+livecms_header('Жалоба на фото', 'users');
 
 if (!isset($file['ID'])){
   

@@ -1,6 +1,6 @@
 <?php
 html::title('Добавить информацию');
-acms_header();
+livecms_header();
 access('info');
 
 if (post('ok_info')){

@@ -1,6 +1,6 @@
 <?php  
 html::title('Логи администрации');
-acms_header();
+livecms_header();
 access('administration_show');
   
 ?>

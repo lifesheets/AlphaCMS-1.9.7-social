@@ -3,7 +3,7 @@
 $account = db::get_string("SELECT `ID` FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
   
 html::title(lg('Подписчики %s', user::login_mini($account['ID'])));
-acms_header();
+livecms_header();
 
 if (!isset($account['ID'])){
   

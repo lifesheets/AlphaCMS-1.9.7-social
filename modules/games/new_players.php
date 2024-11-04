@@ -1,5 +1,5 @@
 <?php
-acms_header('Онлайн игры - новые игроки');
+livecms_header('Онлайн игры - новые игроки');
 is_active_module('PRIVATE_GAMES');
 
 require (ROOT.'/modules/search/plugins/form/games.php');

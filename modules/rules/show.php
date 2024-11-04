@@ -1,6 +1,6 @@
 <?php
 $rules = db::get_string("SELECT * FROM `RULES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
-acms_header(stripslashes(lg($rules['NAME'])));
+livecms_header(stripslashes(lg($rules['NAME'])));
 
 if (!isset($rules['ID'])) {
   

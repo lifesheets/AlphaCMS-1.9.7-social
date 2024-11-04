@@ -1,7 +1,7 @@
 <?php 
 $dir = db::get_string("SELECT * FROM `FILES_DIR` WHERE `ID` = ? AND `PRIVATE` != ? LIMIT 1", [intval(get('dir')), 3]);  
 html::title('Редактировать альбом');
-acms_header(); 
+livecms_header();
 get_check_valid();
 access('users');
 

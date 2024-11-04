@@ -1,5 +1,5 @@
 <?php
-acms_header('Кто просмотрел');
+livecms_header('Кто просмотрел');
 get_check_valid();
 
 $id = intval(get('id'));

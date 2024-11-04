@@ -2,7 +2,7 @@
 $game = db::get_string("SELECT * FROM `GAMES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 $game_user = db::get_string("SELECT * FROM `GAMES_USERS` WHERE `GAME_ID` = ? AND `USER_ID` = ? LIMIT 1", [$game['ID'], user('ID')]);
 $game_count = db::get_column("SELECT COUNT(*) FROM `GAMES_USERS` WHERE `GAME_ID` = ?", [$game['ID']]);
-acms_header(lg('Игра %s', tabs($game['NAME'])));
+livecms_header(lg('Игра %s', tabs($game['NAME'])));
 is_active_module('PRIVATE_GAMES');
 
 if (user('ID') == 0) {

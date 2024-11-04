@@ -1,7 +1,7 @@
 <?php
 $comm = db::get_string("SELECT * FROM `COMMUNITIES` WHERE `URL` = ? LIMIT 1", [esc(get('id'))]);
 $par = db::get_string("SELECT `ADMINISTRATION`,`USER_ID`,`ID`,`ACT` FROM `COMMUNITIES_PAR` WHERE `COMMUNITY_ID` = ? AND `USER_ID` = ? AND `ACT` = ? LIMIT 1", [$comm['ID'], user('ID'), 1]);
-acms_header(lg('Сообщество %s', communities::name($comm['ID'])));
+livecms_header(lg('Сообщество %s', communities::name($comm['ID'])));
 
 if (!isset($comm['ID'])) {
   

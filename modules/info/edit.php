@@ -1,7 +1,7 @@
 <?php
 $info = db::get_string("SELECT * FROM `INFO` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 html::title('Редактировать информацию');
-acms_header();
+livecms_header();
 access('info');
 
 if (!isset($info['ID'])) {

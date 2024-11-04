@@ -1,6 +1,6 @@
 <?php  
 html::title('Альфа установщик');
-acms_header();
+livecms_header();
 access('management'); 
 ?>
 

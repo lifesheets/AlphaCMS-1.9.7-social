@@ -1,6 +1,6 @@
 <?php
 $comm = db::get_string("SELECT * FROM `COMMUNITIES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
-acms_header(lg('Блокировка сообщества %s', tabs($comm['NAME'])), 'communities');
+livecms_header(lg('Блокировка сообщества %s', tabs($comm['NAME'])), 'communities');
 get_check_valid();
 
 if (!isset($comm['ID'])) {

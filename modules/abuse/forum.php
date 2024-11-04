@@ -1,6 +1,6 @@
 <?php
 $forum = db::get_string("SELECT `ID`,`USER_ID` FROM `FORUM_THEM` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);    
-acms_header('Жалоба на тему форума', 'users');
+livecms_header('Жалоба на тему форума', 'users');
 $action = base64_decode(get('action'));
 
 if (!isset($forum['ID'])){

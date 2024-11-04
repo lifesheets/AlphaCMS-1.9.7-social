@@ -1,6 +1,6 @@
 <?php
 $blog = db::get_string("SELECT * FROM `BLOGS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
-acms_header(($blog['SHARE'] == 0 ? lg('Запись - %s', tabs($blog['NAME'])) : lg('Репост')), 'all', text($blog['MESSAGE'], 0, 0, 0, 0));
+livecms_header(($blog['SHARE'] == 0 ? lg('Запись - %s', tabs($blog['NAME'])) : lg('Репост')), 'all', text($blog['MESSAGE'], 0, 0, 0, 0));
 is_active_module('PRIVATE_BLOGS');
 
 if (!isset($blog['ID']) || $blog['COMMUNITY'] > 0) {

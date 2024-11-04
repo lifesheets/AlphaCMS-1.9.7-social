@@ -1,5 +1,5 @@
 <?php
-acms_header('Добавить запись в блог', 'users');
+livecms_header('Добавить запись в блог', 'users');
 is_active_module('PRIVATE_BLOGS');
 
 if (post('ok_blogs')){

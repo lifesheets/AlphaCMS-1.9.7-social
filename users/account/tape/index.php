@@ -1,5 +1,5 @@
 <?php  
-acms_header('Лента', 'users');
+livecms_header('Лента', 'users');
 
 if (get('get') == 'blogs') {
   

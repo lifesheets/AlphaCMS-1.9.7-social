@@ -1,7 +1,7 @@
 <?php  
 $video = db::get_string("SELECT * FROM `VIDEOS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 html::title(lg('Редактировать - %s', tabs($video['NAME'])));
-acms_header();
+livecms_header();
 access('users');
 get_check_valid();
 

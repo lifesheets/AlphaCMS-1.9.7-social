@@ -1,6 +1,6 @@
 <?php
 $music = db::get_string("SELECT * FROM `MUSIC` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
-acms_header(lg('Музыка %s', tabs($music['FACT_NAME'])));
+livecms_header(lg('Музыка %s', tabs($music['FACT_NAME'])));
 is_active_module('PRIVATE_MUSIC');
 
 if (!isset($music['ID'])){

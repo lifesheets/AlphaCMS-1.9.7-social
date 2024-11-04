@@ -1,6 +1,6 @@
 <?php
 html::title('Центр обновлений');
-acms_header();
+livecms_header();
 access('management');
 
 ?>

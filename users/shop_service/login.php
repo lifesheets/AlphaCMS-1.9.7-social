@@ -1,5 +1,5 @@
 <?php  
-acms_header('Смена логина', 'users');
+livecms_header('Смена логина', 'users');
 resources(config('TITLE'), config('LOGIN_SUM'), 'за смену логина');
 
 if (post('ok_lg')){

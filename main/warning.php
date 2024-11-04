@@ -1,6 +1,6 @@
 <?php
 $status = abs(intval(get('status')));
-acms_header(lg('Ошибка %d', $status));
+livecms_header(lg('Ошибка %d', $status));
 
 if ($status != 400 && $status != 401 && $status != 402 && $status != 403 && $status != 404) {
   

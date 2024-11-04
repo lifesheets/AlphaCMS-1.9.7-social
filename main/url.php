@@ -1,5 +1,5 @@
 <?php
-acms_header('Переход по внешней ссылке');  
+livecms_header('Переход по внешней ссылке');
 $link = tabs(base64_decode(get('data')));
 
 if (str($link) == 0 || url_check_validate($link) == 'none') {

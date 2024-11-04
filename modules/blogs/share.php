@@ -1,7 +1,7 @@
 <?php   
 $blog = db::get_string("SELECT * FROM `BLOGS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 html::title(lg('%s', tabs($blog['NAME'])));
-acms_header();
+livecms_header();
 
 if (config('PRIVATE_BLOGS') == 0){
   

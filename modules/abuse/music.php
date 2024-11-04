@@ -1,6 +1,6 @@
 <?php
 $file = db::get_string("SELECT * FROM `MUSIC` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);    
-acms_header('Жалоба на аудио', 'users');
+livecms_header('Жалоба на аудио', 'users');
 
 if (!isset($file['ID'])){
   

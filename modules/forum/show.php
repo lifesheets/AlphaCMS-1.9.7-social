@@ -2,7 +2,7 @@
 $them = db::get_string("SELECT * FROM `FORUM_THEM` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 $scsub = db::get_string("SELECT * FROM `FORUM_SUB_SECTION` WHERE `ID` = ? LIMIT 1", [$them['SUB_SECTION_ID']]);
 $sc = db::get_string("SELECT `NAME`,`ID` FROM `FORUM_SECTION` WHERE `ID` = ? LIMIT 1", [$scsub['SECTION_ID']]);
-acms_header(lg('Тема - %s', tabs($them['NAME'])), 'all', text($them['MESSAGE'], 0, 0, 0, 0));
+livecms_header(lg('Тема - %s', tabs($them['NAME'])), 'all', text($them['MESSAGE'], 0, 0, 0, 0));
 is_active_module('PRIVATE_FORUM');
 
 if (db::get_column("SELECT COUNT(*) FROM `FORUM_BAN` WHERE `USER_ID` = ? AND `BAN_TIME` > ? AND `BAN` = ? LIMIT 1", [user('ID'), TM, 0]) > 0 || db::get_column("SELECT COUNT(*) FROM `FORUM_BAN` WHERE `USER_ID` = ? AND `BAN` = ? LIMIT 1", [user('ID'), 1]) > 0){

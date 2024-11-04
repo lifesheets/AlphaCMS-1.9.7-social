@@ -1,6 +1,6 @@
 <?php
 $account = db::get_string("SELECT `ID`,`LOGIN`,`ACCESS` FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
-acms_header(lg('Блокировка %s', $account['LOGIN']), 'users_blocked');
+livecms_header(lg('Блокировка %s', $account['LOGIN']), 'users_blocked');
 get_check_valid();
 
 if (!isset($account['ID'])){

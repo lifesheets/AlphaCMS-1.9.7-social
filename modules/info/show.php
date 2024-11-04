@@ -1,6 +1,6 @@
 <?php
 $info = db::get_string("SELECT * FROM `INFO` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
-acms_header(stripslashes(lg($info['NAME'])));
+livecms_header(stripslashes(lg($info['NAME'])));
 
 if (!isset($info['ID'])) {
   

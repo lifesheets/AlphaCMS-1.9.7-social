@@ -1,7 +1,7 @@
 <?php 
 $id_dir = intval(get('id'));  
 html::title('Добавить файл');
-acms_header(); 
+livecms_header();
 get_check_valid();
 access('users');
 

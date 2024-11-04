@@ -1,5 +1,5 @@
 <?php
-acms_header('Категории сообществ');
+livecms_header('Категории сообществ');
 is_active_module('PRIVATE_COMMUNITIES');
   
 ?> 

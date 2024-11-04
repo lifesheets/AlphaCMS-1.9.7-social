@@ -1,5 +1,5 @@
 <?php  
-acms_header('Жалобы', 'administration_show');
+livecms_header('Жалобы', 'administration_show');
 
 db::get_set("UPDATE `ABUSE` SET `READ` = '1'");
   

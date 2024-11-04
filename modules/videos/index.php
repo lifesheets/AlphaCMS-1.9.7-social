@@ -1,6 +1,6 @@
 <?php
 html::title('Видео');
-acms_header(); 
+livecms_header();
 
 if (config('PRIVATE_VIDEOS') == 0){
   

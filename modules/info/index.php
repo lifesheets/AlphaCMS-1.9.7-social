@@ -1,6 +1,6 @@
 <?php
 html::title('Информация');
-acms_header();
+livecms_header();
 
 if (access('info', null) == true){
   

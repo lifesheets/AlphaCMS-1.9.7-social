@@ -1,6 +1,6 @@
 <?php  
 html::title('Руководитель');
-acms_header();
+livecms_header();
 access('management');
   
 ?>

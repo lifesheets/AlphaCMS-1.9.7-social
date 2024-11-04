@@ -1,6 +1,6 @@
 <?php  
 html::title('Гости');
-acms_header();
+livecms_header();
 access('users');
 
 require_once (ROOT.'/users/account/guests/plugins/delete.php');

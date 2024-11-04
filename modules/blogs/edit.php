@@ -1,6 +1,6 @@
 <?php  
 $blog = db::get_string("SELECT * FROM `BLOGS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
-acms_header(lg('Редактировать - %s', tabs($blog['NAME'])), 'users');
+livecms_header(lg('Редактировать - %s', tabs($blog['NAME'])), 'users');
 is_active_module('PRIVATE_BLOGS');
 get_check_valid();
 

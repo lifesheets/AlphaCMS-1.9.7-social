@@ -1,6 +1,6 @@
 <?php  
 html::title('Генерация страниц');
-acms_header();
+livecms_header();
 access('management');  
 ?>
 

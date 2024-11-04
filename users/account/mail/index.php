@@ -1,6 +1,6 @@
 <?php  
 html::title('Почта');
-acms_header();
+livecms_header();
 access('users');
 
 ?>  

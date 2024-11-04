@@ -1,6 +1,6 @@
 <?php
 html::title('Кто оценил');
-acms_header();
+livecms_header();
 get_check_valid();
 
 $action = tabs(base64_decode(get('action')));

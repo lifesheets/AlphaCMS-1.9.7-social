@@ -22,7 +22,7 @@ if (get('get') != 'new' && get('get') != 'rating') {
   
 }
 
-acms_header(); 
+livecms_header();
 
 if (config('PRIVATE_DOWNLOADS') == 0){
   

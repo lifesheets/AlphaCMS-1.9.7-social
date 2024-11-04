@@ -1,6 +1,6 @@
 <?php
 html::title('Форум');
-acms_header(); 
+livecms_header();
 
 if (config('PRIVATE_FORUM') == 0){
   

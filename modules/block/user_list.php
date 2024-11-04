@@ -1,6 +1,6 @@
 <?php
 $account = db::get_string("SELECT `ID`,`ACCESS`,`BAN` FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);    
-acms_header(lg('История блокировок %s', user::login_mini($account['ID'])));
+livecms_header(lg('История блокировок %s', user::login_mini($account['ID'])));
 
 if (!isset($account['ID'])){
   

@@ -1,6 +1,6 @@
 <?php
 html::title('Категории блогов');
-acms_header(); 
+livecms_header();
 
 if (config('PRIVATE_BLOGS') == 0){
   

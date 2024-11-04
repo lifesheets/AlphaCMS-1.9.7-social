@@ -1,7 +1,7 @@
 <?php
 $title = config('TITLE');
 html::title('Мета теги');
-acms_header();
+livecms_header();
 access('management');
   
 ?>

@@ -2,7 +2,7 @@
 $account = db::get_string("SELECT * FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 $settings = db::get_string("SELECT * FROM `USERS_SETTINGS` WHERE `USER_ID` = ? LIMIT 1", [$account['ID']]);  
 
-acms_header(lg('Страница %s', user::login_mini($account['ID'])));
+livecms_header(lg('Страница %s', user::login_mini($account['ID'])));
 
 if (!isset($account['ID'])){
   

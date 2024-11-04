@@ -1,6 +1,6 @@
 <?php  
 $account = db::get_string("SELECT `ID`,`SEX`,`DATE_VISIT` FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);   
-acms_header(lg('Вложения переписки с %s', user::login_mini($account['ID'])), 'users');
+livecms_header(lg('Вложения переписки с %s', user::login_mini($account['ID'])), 'users');
 get_check_valid();
 
 if ($account['ID'] == user('ID')) {

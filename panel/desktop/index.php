@@ -1,6 +1,6 @@
 <?php
 html::title('Рабочий стол');
-acms_header();
+livecms_header();
 
 ?><div style='white-space: nowrap;'><div class='desktop-info-optimize'><?
 

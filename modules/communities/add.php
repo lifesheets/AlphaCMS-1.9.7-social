@@ -1,5 +1,5 @@
 <?php
-acms_header('Создать сообщество', 'users');
+livecms_header('Создать сообщество', 'users');
 is_active_module('PRIVATE_COMMUNITIES');
 
 if (post('ok_comm')){

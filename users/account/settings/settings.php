@@ -1,5 +1,5 @@
 <?php  
-acms_header('Общие настройки', 'users');
+livecms_header('Общие настройки', 'users');
 
 if (post('ok')){
   

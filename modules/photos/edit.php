@@ -1,7 +1,7 @@
 <?php  
 $photo = db::get_string("SELECT * FROM `PHOTOS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 html::title(lg('Редактировать - %s', tabs($photo['NAME'])));
-acms_header();
+livecms_header();
 access('users');
 get_check_valid();
 

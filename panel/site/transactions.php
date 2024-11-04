@@ -1,5 +1,5 @@
 <?php  
-acms_header('Транзакции пользователей', 'management');
+livecms_header('Транзакции пользователей', 'management');
   
 ?>
 <div class='navigation'>

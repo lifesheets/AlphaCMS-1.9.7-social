@@ -1,6 +1,6 @@
 <?php 
 html::title('Редактирование сообщения');
-acms_header();
+livecms_header();
 access('users');
 
 get_check_valid();

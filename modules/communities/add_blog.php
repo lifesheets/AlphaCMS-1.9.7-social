@@ -2,7 +2,7 @@
 $comm = db::get_string("SELECT `ID`,`URL` FROM `COMMUNITIES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 $par = db::get_string("SELECT `ID`,`ADMINISTRATION` FROM `COMMUNITIES_PAR` WHERE `COMMUNITY_ID` = ? AND `USER_ID` = ? AND `ACT` = ? LIMIT 1", [$comm['ID'], user('ID'), 1]);
 html::title('Добавить запись в блог');
-acms_header();
+livecms_header();
 access('users');
 communities::blocked($comm['ID']);
 

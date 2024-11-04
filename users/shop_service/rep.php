@@ -1,5 +1,5 @@
 <?php  
-acms_header('Пополнить счет', 'users');
+livecms_header('Пополнить счет', 'users');
 is_active_module('SHOP_REP');
 
 ?>

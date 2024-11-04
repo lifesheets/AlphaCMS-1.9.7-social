@@ -1,7 +1,7 @@
 <?php  
 $music = db::get_string("SELECT * FROM `MUSIC` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 html::title(lg('Редактировать - %s', tabs($music['FACT_NAME'])));
-acms_header();
+livecms_header();
 access('users');
 get_check_valid();
 

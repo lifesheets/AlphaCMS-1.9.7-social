@@ -1,5 +1,5 @@
 <?php
-acms_header('Создать тему', 'users');
+livecms_header('Создать тему', 'users');
 is_active_module('PRIVATE_FORUM');
 
 if (db::get_column("SELECT COUNT(*) FROM `FORUM_BAN` WHERE `USER_ID` = ? AND `BAN_TIME` > ? AND `BAN` = ? LIMIT 1", [user('ID'), TM, 0]) > 0 || db::get_column("SELECT COUNT(*) FROM `FORUM_BAN` WHERE `USER_ID` = ? AND `BAN` = ? LIMIT 1", [user('ID'), 1]) > 0){

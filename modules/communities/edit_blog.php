@@ -3,7 +3,7 @@ $blog = db::get_string("SELECT * FROM `BLOGS` WHERE `ID` = ? LIMIT 1", [intval(g
 $comm = db::get_string("SELECT `ID`,`URL` FROM `COMMUNITIES` WHERE `ID` = ? LIMIT 1", [$blog['COMMUNITY']]);
 $par = db::get_string("SELECT `ID`,`ADMINISTRATION` FROM `COMMUNITIES_PAR` WHERE `COMMUNITY_ID` = ? AND `USER_ID` = ? AND `ACT` = ? LIMIT 1", [$comm['ID'], user('ID'), 1]);
 html::title(lg('Редактировать - %s', tabs($blog['NAME'])));
-acms_header();
+livecms_header();
 access('users');
 communities::blocked($comm['ID']);
 

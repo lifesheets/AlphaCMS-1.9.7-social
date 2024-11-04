@@ -1,5 +1,5 @@
 <?php
-acms_header();
+livecms_header();
 
 if (direct::e_file('style/version/'.version('DIR').'/includes/main.php') == true) {
   

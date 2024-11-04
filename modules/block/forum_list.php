@@ -2,7 +2,7 @@
 $account = db::get_string("SELECT `ID`,`ACCESS` FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
   
 html::title(lg('История блокировок %s на форуме', user::login_mini($account['ID'])));
-acms_header();
+livecms_header();
 
 if (!isset($account['ID'])){
   

@@ -1,6 +1,6 @@
 <?php  
 html::title('Режим онлайн');
-acms_header();
+livecms_header();
 access('management');
   
 ?>

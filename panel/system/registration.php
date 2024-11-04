@@ -1,5 +1,5 @@
 <?php  
-acms_header('Настройки регистрации', 'management');
+livecms_header('Настройки регистрации', 'management');
   
 ?>
 <div class='navigation'>

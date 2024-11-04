@@ -1,5 +1,5 @@
 <?php
-acms_header('Редактировать комментарий', 'users');
+livecms_header('Редактировать комментарий', 'users');
 get_check_valid();
 
 $comments = db::get_string("SELECT `ID`,`MESSAGE`,`USER_ID` FROM `COMMENTS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);

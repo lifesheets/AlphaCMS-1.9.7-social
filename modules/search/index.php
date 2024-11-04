@@ -1,5 +1,5 @@
 <?php
-acms_header('Поиск по сайту');
+livecms_header('Поиск по сайту');
 
 if (post('search')){ session('search', esc(post('search'))); }
 define('SEARCH', tabs(session('search')));

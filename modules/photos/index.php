@@ -1,6 +1,6 @@
 <?php
 html::title('Фотографии');
-acms_header(); 
+livecms_header();
 
 if (config('PRIVATE_PHOTOS') == 0){
   

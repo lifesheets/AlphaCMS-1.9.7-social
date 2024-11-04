@@ -2,7 +2,7 @@
 $them = db::get_string("SELECT `ID`,`USER_ID` FROM `FORUM_THEM` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
 $account = db::get_string("SELECT `ID`,`LOGIN` FROM `USERS` WHERE `ID` = ? LIMIT 1", [$them['USER_ID']]);  
 html::title(lg('Блокировка %s на форуме', $account['LOGIN']));
-acms_header();
+livecms_header();
 access('forum');
 get_check_valid();
 

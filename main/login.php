@@ -1,5 +1,5 @@
 <?php  
-acms_header('Авторизация', 'guests');
+livecms_header('Авторизация', 'guests');
 
 /*
 ------------------------

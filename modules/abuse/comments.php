@@ -1,7 +1,7 @@
 <?php
 $comment = db::get_string("SELECT `ID`,`USER_ID` FROM `COMMENTS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);    
 html::title('Жалоба на сообщение');
-acms_header();
+livecms_header();
 access('users');
 
 $action = base64_decode(get('action'));

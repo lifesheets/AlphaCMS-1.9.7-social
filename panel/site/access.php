@@ -1,6 +1,6 @@
 <?php  
 html::title('Пользовательские права');
-acms_header();
+livecms_header();
 access('management');
   
 ?>

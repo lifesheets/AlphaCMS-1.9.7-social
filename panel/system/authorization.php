@@ -1,6 +1,6 @@
 <?php  
 html::title('Настройки авторизации');
-acms_header();
+livecms_header();
 access('management');
   
 ?>

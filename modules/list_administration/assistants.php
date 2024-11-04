@@ -1,5 +1,5 @@
 <?php
-acms_header('Онлайн помощники');
+livecms_header('Онлайн помощники');
 
 ?> 
 <div class='menu-nav-content'>  

@@ -1,6 +1,6 @@
 <?php    
 html::title('Редактирование статуса');
-acms_header();
+livecms_header();
 access('users');
 
 if (post('ok_status')) {

@@ -1,5 +1,5 @@
 <?php
-acms_header('Регистрация', 'guests');
+livecms_header('Регистрация', 'guests');
 
 /*
 ------------------------

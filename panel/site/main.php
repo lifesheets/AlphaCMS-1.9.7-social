@@ -1,5 +1,5 @@
 <?php  
-acms_header('Главная страница', 'management');
+livecms_header('Главная страница', 'management');
   
 ?>
 <div class='navigation'>

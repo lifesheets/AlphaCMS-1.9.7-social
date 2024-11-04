@@ -1,6 +1,6 @@
 <?php  
 $game = db::get_string("SELECT * FROM `GAMES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
-acms_header(lg('Редактировать игру %s', tabs($game['NAME'])), 'users');
+livecms_header(lg('Редактировать игру %s', tabs($game['NAME'])), 'users');
 is_active_module('PRIVATE_GAMES');
 
 if (!isset($game['ID'])) {

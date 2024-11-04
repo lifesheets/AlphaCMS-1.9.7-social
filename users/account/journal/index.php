@@ -1,5 +1,5 @@
 <?php  
-acms_header('Журнал', 'users');
+livecms_header('Журнал', 'users');
 
 $new = db::get_column("SELECT COUNT(`ID`) FROM `NOTIFICATIONS` WHERE `USER_ID` = ? AND `READ` = '1' LIMIT 1", [user('ID')]);
 $all = db::get_column("SELECT COUNT(`ID`) FROM `NOTIFICATIONS` WHERE `USER_ID` = ? LIMIT 1", [user('ID')]);

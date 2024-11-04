@@ -1,7 +1,7 @@
 <?php
 $news = db::get_string("SELECT * FROM `NEWS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 html::title(lg('Новость - %s', tabs($news['NAME'])));
-acms_header();
+livecms_header();
 
 if (!isset($news['ID'])) {
   

@@ -1,5 +1,5 @@
 <?php
-acms_header('Члены администрации', 'administration_show');
+livecms_header('Члены администрации', 'administration_show');
 
 ?>
 <div class='navigation'>

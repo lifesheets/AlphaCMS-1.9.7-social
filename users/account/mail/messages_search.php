@@ -7,7 +7,7 @@ define('ACCOUNT_SEX', $account['SEX']);
 define('ACCOUNT_DATE_VISIT', $account['DATE_VISIT']);
   
 html::title(lg('Переписка с %s', $account['LOGIN']));
-acms_header();
+livecms_header();
 access('users');
 get_check_valid();
 

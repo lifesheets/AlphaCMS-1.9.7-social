@@ -1,6 +1,6 @@
 <?php
 $account = db::get_string("SELECT `ID` FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
-acms_header(lg('Сообщества %s', user::login_mini($account['ID']))); 
+livecms_header(lg('Сообщества %s', user::login_mini($account['ID'])));
 is_active_module('PRIVATE_COMMUNITIES');
 
 ?> 

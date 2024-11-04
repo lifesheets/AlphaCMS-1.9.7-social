@@ -1,6 +1,6 @@
 <?php
 html::title('Добавить контактную информацию');
-acms_header();
+livecms_header();
 access('contacts');
 
 $contact = db::get_string("SELECT * FROM `CONTACTS` ORDER BY `TIME` DESC LIMIT 1");

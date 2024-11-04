@@ -1,7 +1,7 @@
 <?php  
 $them = db::get_string("SELECT * FROM `FORUM_THEM` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 $scsub = db::get_string("SELECT `PRIVATE`,`ID`,`SECTION_ID` FROM `FORUM_SUB_SECTION` WHERE `ID` = ? LIMIT 1", [$them['SUB_SECTION_ID']]);
-acms_header(lg('Редактировать тему - %s', tabs($them['NAME'])), 'users');
+livecms_header(lg('Редактировать тему - %s', tabs($them['NAME'])), 'users');
 is_active_module('PRIVATE_FORUM');
 get_check_valid();
 

@@ -1,6 +1,6 @@
 <?php
 html::title('Музыка');
-acms_header(); 
+livecms_header();
 
 if (config('PRIVATE_MUSIC') == 0){
   

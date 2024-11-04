@@ -1,5 +1,5 @@
 <?php
-acms_header('История входов', 'users');
+livecms_header('История входов', 'users');
   
 $column = db::get_column("SELECT COUNT(`ID`) FROM `USERS_VISITS` WHERE `USER_ID` = ?", [user('ID')]);
 $spage = spage($column, PAGE_SETTINGS);

@@ -1,5 +1,5 @@
 <?php
-acms_header('Гостевая');
+livecms_header('Гостевая');
 is_active_module('PRIVATE_GUESTBOOK');
 
 require_once (ROOT.'/modules/guestbook/plugins/delete.php');

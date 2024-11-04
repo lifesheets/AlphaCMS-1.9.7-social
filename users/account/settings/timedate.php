@@ -1,6 +1,6 @@
 <?php  
 html::title('Время и дата');
-acms_header();
+livecms_header();
 access('users');
 
 if (post('ok_tm')){

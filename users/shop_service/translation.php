@@ -1,5 +1,5 @@
 <?php  
-acms_header('Перевод денег', 'users');
+livecms_header('Перевод денег', 'users');
 $id = intval(get('id'));
 is_user($id);
 

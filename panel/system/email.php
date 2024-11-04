@@ -1,7 +1,7 @@
 <?php
 $title = config('TITLE');
 html::title('Настройки E-mail');
-acms_header();
+livecms_header();
 access('management');
   
 ?>

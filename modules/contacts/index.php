@@ -1,6 +1,6 @@
 <?php
 html::title('Контакты');
-acms_header();
+livecms_header();
 
 $contact = db::get_string("SELECT * FROM `CONTACTS` ORDER BY `TIME` DESC LIMIT 1");
 

@@ -1,6 +1,6 @@
 <?php
 html::title('Правила');
-acms_header();
+livecms_header();
 
 if (access('rules', null) == true){
   

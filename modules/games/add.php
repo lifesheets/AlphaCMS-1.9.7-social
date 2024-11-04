@@ -1,5 +1,5 @@
 <?php  
-acms_header('Добавить игру', 'users');
+livecms_header('Добавить игру', 'users');
 is_active_module('PRIVATE_GAMES');
 
 if (access('games', null) == false){

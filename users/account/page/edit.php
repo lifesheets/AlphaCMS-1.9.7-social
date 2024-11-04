@@ -3,7 +3,7 @@ $account = db::get_string("SELECT * FROM `USERS` WHERE `ID` = ? LIMIT 1", [intva
 $settings = db::get_string("SELECT * FROM `USERS_SETTINGS` WHERE `USER_ID` = ? LIMIT 1", [$account['ID']]);  
   
 html::title(lg('Редактировать аккаунт %s', user::login_mini($account['ID'])));
-acms_header();
+livecms_header();
 access('users_edit');
 get_check_valid();
 

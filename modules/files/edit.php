@@ -1,6 +1,6 @@
 <?php  
 $file = db::get_string("SELECT * FROM `FILES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
-acms_header(lg('Редактировать - %s', tabs($file['NAME'])), 'users');
+livecms_header(lg('Редактировать - %s', tabs($file['NAME'])), 'users');
 get_check_valid();
 is_active_module('PRIVATE_FILES');
 attachments_result();

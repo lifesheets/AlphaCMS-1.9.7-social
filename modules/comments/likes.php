@@ -1,6 +1,6 @@
 <?php
 html::title('Кто оценил');
-acms_header();
+livecms_header();
 get_check_valid();
 
 $comments = db::get_string("SELECT `ID`,`OBJECT_TYPE` FROM `COMMENTS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);

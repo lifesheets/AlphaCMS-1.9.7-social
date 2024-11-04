@@ -1,6 +1,6 @@
 <?php  
 html::title('Доступ к панели');
-acms_header();
+livecms_header();
 access('management');
   
 ?>

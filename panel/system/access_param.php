@@ -1,6 +1,6 @@
 <?php  
 html::title('Доступ защищен');
-acms_header();
+livecms_header();
 access('administration_show');
   
 //Доступ по паролю

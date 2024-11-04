@@ -1,5 +1,5 @@
 <?php  
-acms_header('Восстановление доступа', 'guests');
+livecms_header('Восстановление доступа', 'guests');
 
 //Установка нового пароля
 if (get('id') && get('hash')){

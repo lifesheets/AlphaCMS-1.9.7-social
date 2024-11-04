@@ -1,7 +1,7 @@
 <?php
 $comm = db::get_string("SELECT `ID`,`URL` FROM `COMMUNITIES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 html::title(lg('Журнал сообщества %s', communities::name($comm['ID'])));
-acms_header();
+livecms_header();
 access('users');
 communities::blocked($comm['ID']);
 

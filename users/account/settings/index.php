@@ -1,6 +1,6 @@
 <?php  
 html::title('Настройки');
-acms_header();
+livecms_header();
 access('users');
 
 ?><div class='list-body'><?

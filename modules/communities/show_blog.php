@@ -2,7 +2,7 @@
 $blog = db::get_string("SELECT * FROM `BLOGS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 $comm = db::get_string("SELECT `ID`,`URL` FROM `COMMUNITIES` WHERE `ID` = ? LIMIT 1", [$blog['COMMUNITY']]);
 $par = db::get_string("SELECT `ID`,`ADMINISTRATION` FROM `COMMUNITIES_PAR` WHERE `COMMUNITY_ID` = ? AND `USER_ID` = ? AND `ACT` = ? LIMIT 1", [$comm['ID'], user('ID'), 1]);
-acms_header(lg('Запись - %s', tabs($blog['NAME'])), 'all', text($blog['MESSAGE'], 0, 0, 0, 0));
+livecms_header(lg('Запись - %s', tabs($blog['NAME'])), 'all', text($blog['MESSAGE'], 0, 0, 0, 0));
 is_active_module('PRIVATE_COMMUNITIES');
 communities::blocked($comm['ID']);
 

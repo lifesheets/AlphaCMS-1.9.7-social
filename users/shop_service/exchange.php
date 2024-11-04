@@ -1,5 +1,5 @@
 <?php
-acms_header('Обмен баллов на деньги', 'users');
+livecms_header('Обмен баллов на деньги', 'users');
 $balls_ini = @parse_ini_file(ROOT."/system/config/balls.ini", false);
 $balls = intval($balls_ini['EXCHANGE']);
 

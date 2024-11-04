@@ -1,5 +1,5 @@
 <?php  
-acms_header('Поднять рейтинг', 'users');
+livecms_header('Поднять рейтинг', 'users');
 $rating = @parse_ini_file(ROOT."/system/config/rating.ini", false);
 resources(config('TITLE'), $rating['MONEY'], 'за 1 ед. рейтинга');
 

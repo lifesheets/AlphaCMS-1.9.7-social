@@ -1,7 +1,7 @@
 <?php
 $account = db::get_string("SELECT `ID`,`LOGIN` FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
 html::title(lg('Темы %s', $account['LOGIN']));
-acms_header(); 
+livecms_header();
 
 if (config('PRIVATE_FORUM') == 0){
   

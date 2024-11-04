@@ -1,6 +1,6 @@
 <?php  
 html::title('Настройки журнала');
-acms_header();
+livecms_header();
 access('users');
 
 function notif($param) {

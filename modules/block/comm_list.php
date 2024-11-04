@@ -1,6 +1,6 @@
 <?php
 $comm = db::get_string("SELECT `ID`,`USER_ID`,`URL` FROM `COMMUNITIES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]); 
-acms_header(lg('История блокировок %s сообщества', communities::name($comm['ID'])));
+livecms_header(lg('История блокировок %s сообщества', communities::name($comm['ID'])));
 
 if (!isset($comm['ID'])){
   

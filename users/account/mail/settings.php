@@ -1,6 +1,6 @@
 <?php 
 html::title('Настройки почты');
-acms_header();
+livecms_header();
 access('users');
 
 $mail_set = db::get_string("SELECT * FROM `MAIL_SETTINGS` WHERE `USER_ID` = ? LIMIT 1", [user('ID')]);

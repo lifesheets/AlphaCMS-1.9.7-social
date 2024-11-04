@@ -1,6 +1,6 @@
 <?php
 html::title('Добавить новость');
-acms_header();
+livecms_header();
 access('news');
 
 if (config('PRIVATE_NEWS') == 0){

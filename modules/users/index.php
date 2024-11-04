@@ -1,6 +1,6 @@
 <?php
 html::title('Пользователи');
-acms_header();
+livecms_header();
   
 $online = db::get_column("SELECT COUNT(*) FROM `USERS` WHERE `DATE_VISIT` > ?", [(TM - config('ONLINE_TIME_USERS'))]); 
 $guests = db::get_column("SELECT COUNT(*) FROM `GUESTS` WHERE `DATE_VISIT` > ?", [(TM - config('ONLINE_TIME_GUESTS'))]);                 

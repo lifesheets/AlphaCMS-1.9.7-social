@@ -1,6 +1,6 @@
 <?php  
 $them = db::get_string("SELECT `ID`,`NAME` FROM `FORUM_THEM` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);   
-acms_header(lg('Файлы темы - %s', tabs($them['NAME'])));
+livecms_header(lg('Файлы темы - %s', tabs($them['NAME'])));
 is_active_module('PRIVATE_FORUM');
 
 if (!isset($them['ID'])) {

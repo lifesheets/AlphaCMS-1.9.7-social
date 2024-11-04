@@ -1,5 +1,5 @@
 <?php
-acms_header('Администрация');
+livecms_header('Администрация');
 
 ?> 
 <div class='menu-nav-content'>  

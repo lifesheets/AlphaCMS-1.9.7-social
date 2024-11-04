@@ -1,5 +1,5 @@
 <?php  
-acms_header('Магазин услуг', 'users');
+livecms_header('Магазин услуг', 'users');
 
 ?>
 <div class='list-body'>

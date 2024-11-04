@@ -1,7 +1,7 @@
 <?php 
 $dir = db::get_string("SELECT `ID` FROM `PHOTOS_DIR` WHERE `ID` = ? AND `USER_ID` = ? AND `PRIVATE` != ? LIMIT 1", [intval(get('dir')), user('ID'), 3]);  
 html::title('Создать альбом');
-acms_header(); 
+livecms_header();
 get_check_valid();
 access('users');
 

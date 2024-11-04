@@ -1,6 +1,6 @@
 <?php
 html::title('Чат адмнистрации');
-acms_header();
+livecms_header();
 access('administration_show');
 
 ?>

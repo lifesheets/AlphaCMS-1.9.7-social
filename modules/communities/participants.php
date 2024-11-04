@@ -2,7 +2,7 @@
 $comm = db::get_string("SELECT `ID`,`URL`,`USER_ID`,`NAME` FROM `COMMUNITIES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);
 $par = db::get_string("SELECT `ID`,`ADMINISTRATION` FROM `COMMUNITIES_PAR` WHERE `COMMUNITY_ID` = ? AND `USER_ID` = ? AND `ACT` = ? LIMIT 1", [$comm['ID'], user('ID'), 1]);
 html::title(lg('Участники сообщества %s', communities::name($comm['ID'])));
-acms_header();
+livecms_header();
 communities::blocked($comm['ID']);
 
 if (!isset($comm['ID'])) {

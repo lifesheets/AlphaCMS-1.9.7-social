@@ -1,6 +1,6 @@
 <?php  
 html::title('Настройки e-mail');
-acms_header();
+livecms_header();
 access('users');
 
 $time = TM - 300;

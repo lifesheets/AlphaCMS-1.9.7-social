@@ -1,6 +1,6 @@
 <?php  
 $account = db::get_string("SELECT `ID` FROM `USERS` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
-acms_header('Заявки в друзья');
+livecms_header('Заявки в друзья');
 
 if (!isset($account['ID'])){
   

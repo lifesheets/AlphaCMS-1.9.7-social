@@ -1,6 +1,6 @@
 <?php
 $file = db::get_string("SELECT * FROM `FILES` WHERE `ID` = ? LIMIT 1", [intval(get('id'))]);  
-acms_header(lg('Файл %s', tabs($file['NAME'])));
+livecms_header(lg('Файл %s', tabs($file['NAME'])));
 is_active_module('PRIVATE_FILES');
 
 if (!isset($file['ID'])){

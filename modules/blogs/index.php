@@ -1,6 +1,6 @@
 <?php
 html::title('Блоги');
-acms_header(); 
+livecms_header();
 
 if (config('PRIVATE_BLOGS') == 0){
   

@@ -1,6 +1,6 @@
 <?php
 html::title('Добавить раздел правил');
-acms_header();
+livecms_header();
 access('rules');
 
 if (post('ok_rules')){
