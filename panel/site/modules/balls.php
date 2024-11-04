@@ -14,7 +14,6 @@ if (post('ok')){
   $files_comments = abs(intval(post('files_comments')));
   $music_comments = abs(intval(post('music_comments')));
   $blogs_comments = abs(intval(post('blogs_comments')));
-  $guestbook_comments = abs(intval(post('guestbook_comments')));
   $photos = abs(intval(post('photos')));
   $videos = abs(intval(post('videos')));
   $files = abs(intval(post('files')));
@@ -30,7 +29,6 @@ if (post('ok')){
   ini::upgrade(ROOT.'/system/config/balls.ini', 'FILES_COMMENTS', $files_comments);
   ini::upgrade(ROOT.'/system/config/balls.ini', 'MUSIC_COMMENTS', $music_comments);
   ini::upgrade(ROOT.'/system/config/balls.ini', 'BLOGS_COMMENTS', $blogs_comments);
-  ini::upgrade(ROOT.'/system/config/balls.ini', 'GUESTBOOK_COMMENTS', $guestbook_comments);
   ini::upgrade(ROOT.'/system/config/balls.ini', 'PHOTOS', $photos);
   ini::upgrade(ROOT.'/system/config/balls.ini', 'VIDEOS', $videos);
   ini::upgrade(ROOT.'/system/config/balls.ini', 'FILES', $files);
@@ -60,7 +58,6 @@ if (post('ok')){
 <?=html::input('files_comments', 0, 'Баллы за комментарии под файлом:', null, tabs($balls['FILES_COMMENTS']), 'form-control-30', 'number', null, 'comments')?>
 <?=html::input('music_comments', 0, 'Баллы за комментарии под музыкой:', null, tabs($balls['MUSIC_COMMENTS']), 'form-control-30', 'number', null, 'comments')?>
 <?=html::input('blogs_comments', 0, 'Баллы за комментарии под записью в блоге:', null, tabs($balls['BLOGS_COMMENTS']), 'form-control-30', 'number', null, 'comments')?>
-<?=html::input('guestbook_comments', 0, 'Баллы за комментарии в общей гостевой:', null, tabs($balls['GUESTBOOK_COMMENTS']), 'form-control-30', 'number', null, 'comments')?>
 <?=html::input('forum_comments', 0, 'Баллы за комментарии под темой форума:', null, tabs($balls['FORUM_COMMENTS']), 'form-control-30', 'number', null, 'comments')?>
 <?=html::input('photos', 0, 'Баллы за добавление фото:', null, tabs($balls['PHOTOS']), 'form-control-30', 'number', null, 'image')?>
 <?=html::input('videos', 0, 'Баллы за добавление видео:', null, tabs($balls['VIDEOS']), 'form-control-30', 'number', null, 'film')?>

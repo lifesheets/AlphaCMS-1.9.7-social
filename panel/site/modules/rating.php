@@ -337,7 +337,6 @@ if (post('ok')){
   ini::upgrade(ROOT.'/system/config/rating.ini', 'FILES_COMMENTS', $files_comm);
   ini::upgrade(ROOT.'/system/config/rating.ini', 'MUSIC', $music);
   ini::upgrade(ROOT.'/system/config/rating.ini', 'MUSIC_COMMENTS', $music_comm);
-  ini::upgrade(ROOT.'/system/config/rating.ini', 'GUESTBOOK_COMMENTS', $guest);
   ini::upgrade(ROOT.'/system/config/rating.ini', 'FORUM', $forum);
   ini::upgrade(ROOT.'/system/config/rating.ini', 'FORUM_COMMENTS', $forum_comm);
   
@@ -369,7 +368,6 @@ html::input('files', 0, 'Начисление за добавление файл
 html::input('files_comm', 0, 'Начисление за добавление комментария под файлом:', null, $rating['FILES_COMMENTS'], 'form-control-30', 'text', null, 'bar-chart');
 html::input('music', 0, 'Начисление за добавление музыки:', null, $rating['MUSIC'], 'form-control-30', 'text', null, 'bar-chart');
 html::input('music_comm', 0, 'Начисление за добавление комментария под музыкой:', null, $rating['MUSIC_COMMENTS'], 'form-control-30', 'text', null, 'bar-chart');
-html::input('guest', 0, 'Начисление за добавление комментария в гостевой:', null, $rating['GUESTBOOK_COMMENTS'], 'form-control-30', 'text', null, 'bar-chart');
 html::input('forum', 0, 'Начисление за добавление темы на форуме:', null, $rating['FORUM'], 'form-control-30', 'text', null, 'bar-chart');
 html::input('forum_comm', 0, 'Начисление за добавление комментария в тему на форуме:', null, $rating['FORUM_COMMENTS'], 'form-control-30', 'text', null, 'bar-chart');
 html::button('button ajax-button', 'ok', 'save', 'Сохранить изменения');

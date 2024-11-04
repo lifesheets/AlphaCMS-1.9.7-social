@@ -192,7 +192,7 @@ function delete_comments_ajax($type, $author, $o_id){
         db::get_set("DELETE FROM `ATTACHMENTS` WHERE `ID_POST` = ? AND `TYPE_POST` = ?", [$comments['ID'], $type]);
         db::get_set("DELETE FROM `COMMENTS` WHERE `ID` = ? LIMIT 1", [$comments['ID']]);
         
-        if ($type == 'forum_comments' || $type == 'blogs_comments' || $type == 'guestbook_comments' || $type == 'videos_comments' || $type == 'music_comments' || $type == 'photos_comments' || $type == 'files_comments') {
+        if ($type == 'forum_comments' || $type == 'blogs_comments' || $type == 'videos_comments' || $type == 'music_comments' || $type == 'photos_comments' || $type == 'files_comments') {
           
           balls_add(strtoupper($type), $comments['USER_ID']);
           rating_add(strtoupper($type), $comments['USER_ID']);
@@ -356,7 +356,7 @@ function comments($action, $type, $notification = 0, $post_name = 'message', $au
       
     }
     
-    if ($type == 'forum_comments' || $type == 'blogs_comments' || $type == 'guestbook_comments' || $type == 'videos_comments' || $type == 'music_comments' || $type == 'photos_comments' || $type == 'files_comments') {
+    if ($type == 'forum_comments' || $type == 'blogs_comments' || $type == 'videos_comments' || $type == 'music_comments' || $type == 'photos_comments' || $type == 'files_comments') {
       
       balls_add(strtoupper($type));
       rating_add(strtoupper($type));
